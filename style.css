@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,100;1,400&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(bg-intro-desktop.png);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    padding: 10px;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.left-content {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 25%;
+}
+
+.right-content {
+    width: 25%;
+    padding: 5px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.buttn {
+    padding: 10px;
+    width: 100%;
+    background: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttn a {
+    text-decoration: none;
+    font-family: poppin;
+    font-weight: 200;
+    color: white;
+}
+
+.buttn:hover {
+    background-color: rgb(228, 205, 35);
+}
+
+.input {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+.bottom {
+    font-size: 7px;
+    color: hsl(246, 25%, 77%);
+}
+
+#submit {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+#bottom-p {
+    color: hsl(0, 100%, 74%);
+    font-size: 9px;
+    text-decoration: none;
+}
+
+#var {
+    color: hsl(246, 25%, 77%);
+    text-transform: initial;
+}
+
+#a,
+#b,
+#c,
+#d {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+#submit:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+/* using the media query to set responsiveness */
+
+@media screen and (max-width:375px){
+    .main{display: block;
+    padding: 20px;}
+    
+    .left-content{
+        width: fit-content;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .right-content{
+
+        
+            width: 95%;
+            padding: 10px;
+            margin: auto;
+    
+
+    }
+        
+
+    
+}
